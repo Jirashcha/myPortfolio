@@ -4,10 +4,9 @@
     <meta charset="UTF-8" />
     <title>Jirashcha</title>
     <link rel="stylesheet" href="style.css" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
-    />
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   </head>
@@ -16,11 +15,11 @@
     <nav>
       <div class="nav-container">
         <div class="links">
-          <div class="link"><a href="#">Home</a></div>
-          <div class="link"><a href="#">About</a></div>
-          <div class="link"><a href="#">Skills</a></div>
-          <div class="link"><a href="#">Activities</a></div>
-          <div class="link"><a href="#">Contact</a></div>
+          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
+          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>
+          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Skills</a></div>
+          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Activities</a></div>
+          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
         </div>
         <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
       </div>
@@ -38,26 +37,26 @@
     <!-- Home -->
     <section>
       <div class="main-container">
-        <div class="image">
+        <div class="image" data-aos="zoom-out" data-aos-duration="3000">
           <img src="img/profile.png" alt="" />
         </div>
         <div class="content">
-          <h1 data-aos="fade-left">Hi, I'm <span>Jirashcha</span></h1>
-          <div class="typewriter">
+          <h1 data-aos="fade-left" data-aos-duration="1500" data-aos-delay="700">Hi, I'm <span>Jirashcha</span></h1>
+          <div class="typewriter" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="900">
             I'm a
             <span class="typewriter-text"></span>
             <label for="">|</label>
           </div>
-          <p>
+          <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="900">
             Fourth-year Computer Science student majoring in Data Science and
             Cybersecurity at Bangkok University, passionate about pursuing a
             career in Data Engineering and working on data-driven solutions.
           </p>
           <div class="social-links">
-            <a href="#"><i class="fa-brands fa-github"></i></a>
-            <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#"><i class="fa-brands fa-youtube"></i></a>
+            <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+            <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-facebook"></i></a>
+            <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-youtube"></i></a>
           </div>
         </div>
       </div>
@@ -65,12 +64,12 @@
     <!-- About -->
     <section class="about" id="about">
       <div class="content">
-        <div class="title"><span>About Me</span></div>
+        <div class="title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><span>About Me</span></div>
         <div class="about-details">
           <div class="left">
             <div class="details">
-              <div class="topic">Who am I?</div>
-              <p>
+              <div class="topic" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="300">Who am I?</div>
+              <p data-aos="flip-down" data-aos-duration="1500">
                 My name is Jirashcha Wanggum (Wan). I'm a Microsoft Learn
                 Student Ambassador, currently interning as a Junior Software
                 Developer, and also working as a research assistant at the
@@ -80,12 +79,12 @@
                 a career in Data, with a focus on mastering the entire Data life
                 cycle, especially in Data Engineering.
               </p>
-              <div class="button">
+              <div class="button" data-aos="fade-left" data-aos-duration="1500">
                 <button>Download Resume</button>
               </div>
             </div>
           </div>
-          <div class="right">
+          <div class="right" data-aos="zoom-out" data-aos-duration="3000">
             <img src="img/about.png" alt="" />
           </div>
         </div>
@@ -94,18 +93,36 @@
     <!-- Skills -->
     <section class="skills" id="skills">
       <div class="content">
-        <div class="title"><span>Skills</span></div>
+        <div class="title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><span>Skills</span></div>
         <div class="skills-details"></div>
+      </div>
+      <div class="box" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200">
+        <div class="skill">
+          <div class="icon">
+            <i class="fa-solid fa-code"></i>
+          </div>
+          <div class="name">Programming</div>
+          <div class="bar">
+            <div class="progress" style="width: 90%"></div>
+          </div>
+        </div>
+        
+        
       </div>
     </section>
 
     <footer>
       <div class="text">
         <span
-          >Created By<a href="#">Jirashcha</a>|&#169;2024 All Rights
+          >Created By <a href="#">Jirashcha</a> | &#169; 2024 All Rights
           Reserved</span
         >
       </div>
     </footer>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+    <script src="script.js"></script>
   </body>
 </html>

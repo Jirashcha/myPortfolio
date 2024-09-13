@@ -124,13 +124,12 @@ body{
 
 section{
     width: 100%;
-    min-height: 90vh;
+    min-height: 70vh;
 }
 
 section .main-container{
     display: flex;
     justify-content: space-around;
-    margin: 30px 0;
     padding-left: 35px;
     align-items: center;
 }
@@ -191,7 +190,18 @@ main-container .image img{
 .content .typewriter-text{
     color: #919cca;
     text-shadow: 0 0 3px #919cca;
+    display: inline;
 }
+.content .typewriter label {
+    font-weight: normal;
+    animation: blink 1s infinite;
+ }
+
+ @keyframes blink {
+    0% { opacity: 1; }
+    50% { opacity: 0; }
+    100% { opacity: 1; }
+ }
 
 .content p{
     font-size: 1.2rem;
@@ -324,3 +334,52 @@ section .topic{
 section .button{
     margin: 16px 0;
 }
+
+/*footer section */
+footer{
+    background-color: #929AAB;
+    color: #F5F5F5;
+    padding: 15px 0;
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+}
+footer .text span{
+    color: #30475E;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+footer .text span a{
+    color: #F5F5F5;
+    font-weight: 500;
+    text-decoration: none;
+    transition: 0.3s linear;
+}
+footer .text span a:hover{
+    color: #30475E;
+    font-weight: 600;
+    text-decoration: underline;
+}
+
+/* skills section */
+.skills{
+    width: 100%;
+    height: auto;
+    padding: 50px 0;
+    background-color: #F5F5F5;
+    justify-content: center;
+}
+.skills .box{
+    background-color: #deddd9;
+    width: 80%;
+    height: 80px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    box-shadow: 0 0 20px #deddd9;
+}
+    
+
