@@ -361,25 +361,6 @@ footer .text span a:hover{
     text-decoration: underline;
 }
 
-/* skills section */
-.skills{
-    width: 100%;
-    height: auto;
-    padding: 50px 0;
-    background-color: #F5F5F5;
-    justify-content: center;
-}
-.skills .box{
-    background-color: #deddd9;
-    width: 80%;
-    height: 80px;
-    border-radius: 20px;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    margin: 0 auto;
-    box-shadow: 0 0 20px #deddd9;
-}
+
     
 
