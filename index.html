@@ -4,7 +4,6 @@
     <meta charset="UTF-8" />
     <title>Jirashcha</title>
     <link rel="stylesheet" href="style.css" />
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
@@ -16,24 +15,26 @@
       <div class="nav-container">
         <div class="links">
           <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><a href="#">Home</a></div>
-          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#">About</a></div>
-          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#">Skills</a></div>
-          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#">Activities</a></div>
-          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#">Contact</a></div>
+          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="200"><a href="#about">About</a></div>
+          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="300"><a href="#skills">Skills</a></div>
+          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="400"><a href="#works">Works</a></div>
+          <div class="link" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="500"><a href="#contact">Contact</a></div>
         </div>
         <i class="fa-solid fa-bars hamburg" onclick="hamburg()"></i>
       </div>
       <div class="dropdown">
         <div class="links">
           <a href="#">Home</a>
-          <a href="#">About</a>
-          <a href="#">Skills</a>
-          <a href="#">Activities</a>
-          <a href="#">Contact</a>
+          <a href="#about">About</a>
+          <a href="#skills">Skills</a>
+          <a href="#works">Works</a>
+          <a href="#contact">Contact</a>
           <i class="fa-solid fa-xmark cancel" onclick="cancel()"></i>
         </div>
       </div>
     </nav>
+    <section><div class="spacebox"></div></section>
+
     <!-- Home -->
     <section>
       <div class="main-container">
@@ -48,15 +49,16 @@
             <label for="">|</label>
           </div>
           <p data-aos="flip-down" data-aos-duration="1500" data-aos-delay="900">
-            Fourth-year Computer Science student majoring in Data Science and
-            Cybersecurity at Bangkok University, passionate about pursuing a
-            career in Data Engineering and working on data-driven solutions.
+            I’m a Computer Science student with a keen interest in Data Engineering 
+            and AI. Here, you’ll find my real-world project work, events I’ve organized 
+            and spoken at throughout my studies, as well as various activities I’ve been 
+            involved in. Explore the skills and experiences I’ve developed on my learning journey!
           </p>
           <div class="social-links">
-            <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
-            <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-linkedin"></i></a>
-            <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-facebook"></i></a>
-            <a href="#" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-youtube"></i></a>
+            <a href="https://github.com/Jirashcha" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1300"><i class="fa-brands fa-github"></i></a>
+            <a href="https://www.linkedin.com/in/jirashcha/" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1400"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://www.facebook.com/jirashcha.strange" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1500"><i class="fa-brands fa-facebook"></i></a>
+            <a href="https://www.youtube.com/@data-en" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="1600"><i class="fa-brands fa-youtube"></i></a>
           </div>
         </div>
       </div>
@@ -70,14 +72,13 @@
             <div class="details">
               <div class="topic" data-aos="fade-down" data-aos-duration="1500" data-aos-delay="300">Who am I?</div>
               <p data-aos="flip-down" data-aos-duration="1500">
-                My name is Jirashcha Wanggum (Wan). I'm a Microsoft Learn
-                Student Ambassador, currently interning as a Junior Software
-                Developer, and also working as a research assistant at the
-                Center of Specialty Innovation (CoSI). I love learning and
-                sharing knowledge, taking on new challenges, and communicating
-                with people. Currently, I’m particularly interested in pursuing
-                a career in Data, with a focus on mastering the entire Data life
-                cycle, especially in Data Engineering.
+                I'm Jirashcha Wanggum (Wan), a fourth-year Computer Science 
+                student majoring in Data Science and Cybersecurity at Bangkok University. 
+                As a Microsoft Learn Student Ambassador, I’m deeply involved in learning 
+                and sharing knowledge, and I thrive on taking on new challenges and connecting with people<br><br>
+                Currently, I have a strong passion for Data Engineering and am focused on 
+                mastering the entire Data lifecycle. My goal is to develop innovative, data-driven 
+                solutions and pursue a career that leverages my skills and interests in this field.
               </p>
               <div class="button" data-aos="fade-left" data-aos-duration="1500">
                 <button>Download Resume</button>
@@ -96,9 +97,13 @@
       <div class="content">
         <div class="title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><span>Skills</span></div>
         <div class="boxes">
-          <div class="box">
-            <div class="icon"><i class="fa-solid fa-code"></i></div>
-            <div class="topic">Programming Languages</div>
+          <div class="box" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="100">
+            <div class="skill">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24"><path fill="currentColor" fill-rule="evenodd" d="M3.464 3.464C2 4.93 2 7.286 2 12s0 7.071 1.464 8.535C4.93 22 7.286 22 12 22s7.071 0 8.535-1.465C22 19.072 22 16.714 22 12s0-7.071-1.465-8.536C19.072 2 16.714 2 12 2S4.929 2 3.464 3.464m2.96 6.056a.75.75 0 0 1 1.056-.096l.277.23c.605.504 1.12.933 1.476 1.328c.379.42.674.901.674 1.518s-.295 1.099-.674 1.518c-.356.395-.871.824-1.476 1.328l-.277.23a.75.75 0 1 1-.96-1.152l.234-.195c.659-.55 1.09-.91 1.366-1.216c.262-.29.287-.427.287-.513s-.025-.222-.287-.513c-.277-.306-.707-.667-1.366-1.216l-.234-.195a.75.75 0 0 1-.096-1.056M17.75 15a.75.75 0 0 1-.75.75h-5a.75.75 0 0 1 0-1.5h5a.75.75 0 0 1 .75.75" clip-rule="evenodd"/></svg>
+              </div>
+              <div class="topic">Languages</div>
+            </div>
             <ul>
               <li>Python</li>
               <li>Scala</li>
@@ -109,124 +114,317 @@
               <li>Java</li>
             </ul>
           </div>
-          <div class="box">
-            <div class="icon"><i class="fa-solid fa-code"></i></div>
-            <div class="topic">Data Engineering Tools</div>
+          <div class="box" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+            <div class="skill">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 48 48"><path fill="currentColor" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="4" d="M44 16c0 6.627-5.373 12-12 12c-2.027 0-3.936-.503-5.61-1.39L9 44l-5-5l17.39-17.39A11.95 11.95 0 0 1 20 16c0-6.627 5.373-12 12-12c2.027 0 3.936.502 5.61 1.39L30 13l5 5l7.61-7.61A11.95 11.95 0 0 1 44 16"/></svg>
+              </div>
+              <div class="topic">Tools</div>
+            </div>
             <ul>
               <li>Apache Spark</li>
               <li>Apache Kafka</li>
               <li>Airflow</li>
               <li>ETL/ELT Processes</li>
               <li>dbt</li>
+              <li>Yolo</li>
+              <li>OpenCV</li>
             </ul>
           </div>
-          <div class="box">
-            <div class="icon"><i class="fa-solid fa-code"></i></div>
-            <div class="topic">Databases</div>
+          <div class="box" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="300">
+            <div class="skill">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24"><g fill="none"><path fill="currentColor" d="M21 7c0 2.21-4.03 4-9 4S3 9.21 3 7s4.03-4 9-4s9 1.79 9 4"/><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 7c0 2.21-4.03 4-9 4S3 9.21 3 7m18 0c0-2.21-4.03-4-9-4S3 4.79 3 7m18 0v5M3 7v5m18 0c0 2.21-4.03 4-9 4s-9-1.79-9-4m18 0v5c0 2.21-4.03 4-9 4s-9-1.79-9-4v-5"/></g></svg>
+              </div>
+              <div class="topic">Databases</div>
+            </div>
             <ul>
               <li>MySQL/MariaDB</li>
               <li>MongoDB</li>
               <li>NoSQL Databases</li>
             </ul>
           </div>
-          <div class="box">
-            <div class="icon"><i class="fa-solid fa-code"></i></div>
-            <div class="topic">Cloud Platforms</div>
+          <div class="box"data-aos="fade-right" data-aos-duration="1500" data-aos-delay="400">
+            <div class="skill">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 512 512"><path fill="currentColor" d="M59.385 242.467c2.672-50.603 44.751-77.785 94.423-54.037c44.02-135.362 263.243-133.97 275.596 49.587c106.336 15.459 113.836 156.376.055 181.12H78.124c-96.737-20.182-104.393-141.973-18.739-176.67"/></svg>
+              </div>
+              <div class="topic">Cloud Platforms</div>
+            </div>
             <ul>
               <li>Azure</li>
               <li>Google Cloud Platform (GCP)</li>
             </ul>
           </div>
+        </div>
+        <div class="boxes" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="100">  
           <div class="box">
-            <div class="icon"><i class="fa-solid fa-code"></i></div>
-            <div class="topic">Data Visualization and Reporting</div>
+            <div class="skill">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 24 24"><path fill="currentColor" d="M22 21H2V3h2v16h2v-2h4v2h2v-3h4v3h2v-2h4zm-4-7h4v2h-4zm-6-8h4v3h-4zm4 9h-4v-5h4zM6 10h4v2H6zm4 6H6v-3h4z"/></svg>
+              </div>
+              <div class="topic">Visualization</div>
+            </div>
             <ul>
               <li>Looker Studio</li>
             </ul>
           </div>
-          <div class="box">
-            <div class="icon"><i class="fa-solid fa-code"></i></div>
-            <div class="topic">Computer Vision and AI</div>
-            <ul>
-              <li>Yolo</li>
-              <li>OpenCV</li>
-            </ul>
-          </div>
-          <div class="box">
-            <div class="icon"><i class="fa-solid fa-code"></i></div>
-            <div class="topic">Version Control</div>
+          <div class="box" data-aos="fade-right" data-aos-duration="1500" data-aos-delay="200">
+            <div class="skill">
+              <div class="icon">
+                <svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="2rem" viewBox="0 0 15 15"><path fill="currentColor" d="M6.44.854a1.5 1.5 0 0 1 2.12 0l5.586 5.585a1.5 1.5 0 0 1 0 2.122l-5.585 5.585a1.5 1.5 0 0 1-2.122 0L.854 8.561a1.5 1.5 0 0 1 0-2.122L4.793 2.5l1.353 1.353A1.5 1.5 0 0 0 7 5.914v3.171a1.5 1.5 0 1 0 1 0v-3.17q.076-.027.147-.061l1 1a1.5 1.5 0 1 0 .707-.707l-1-1a1.5 1.5 0 0 0-2-2L5.5 1.792z"/></svg>
+              </div>
+              <div class="topic">Version Control</div>
+            </div>
             <ul>
               <li>git</li>
               <li>GitHub</li>
             </ul>
           </div>
         </div>
-      </div>
-      <div class="content-pro">
-        <div class="title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><span>Projects</span></div>
-        <div class="boxes">
-          <div class="box">
-
-          </div>
-          <div class="box">
-            
-          </div>
-          <div class="box">
-            
-          </div>
-        </div>
-      </div>
-      <div class="content-cer"></div>
-        <div class="title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><span>Certificates</span></div>
-        <div class="boxes">
-          <div class="box">
-
-          </div>
-          <div class="box">
-            
-          </div>
-          <div class="box">
-            
-          </div>
-        </div>
-      </div>
+      </div> 
     </section>
 
-    <!-- Activities -->
-    <section class="activities" id="activities">
+    <!-- Works -->
+    <section class="works" id="works">
       <div class="content">
-        <div class="title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><span>Activities</span></div>
-        <div class="boxes">
-
+        <div class="title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100">
+          <span>Works</span>
         </div>
-      </div>
-      <div class="content-awards">
-        <div class="title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><span>Awards</span></div>
-        <div class="boxes">
+        <!-- Tabs for Activities, Projects, Certificates -->
+        <div class="tabs">
+          <button class="tab-button active" data-tab="activities">Activities</button>
+          <button class="tab-button" data-tab="projects">Projects</button>
+          <button class="tab-button" data-tab="certificates">Certificates</button>
+        </div>
+        <!-- Content for each tab -->
+        <div class="tab-content active" id="activities-tab">
+          <div class="boxes">
+            <div class="card" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="100">
+              <div class="image">
+                <img src="img/activity/sdc.PNG" alt="" />
+              </div>
+              <div class="detail">
+                <h3>Saturday Dev Club</h3>
+                <p>Excited to kick off the first Saturday of the “Saturday Dev Club”, a project I started with my friend...</p>
+                <button class="detail-btn" onclick="window.open('https://www.linkedin.com/posts/jirashcha_excited-to-kick-off-the-first-saturday-of-activity-7238201364969857024-KLn-?utm_source=share&utm_medium=member_desktop', '_blank');">More Details</button>
+              </div>
+            </div>
+          
+            <div class="card" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">
+              <div class="image">
+                <img src="img/activity/ac2.png" alt="" />
+              </div>
+              <div class="detail">
+                <h3>Full-stack web development Workshop</h3>
+                <p>From August 29th to 31st, I had the opportunity to be part of the Speaker team for a workshop on full-stack...</p>
+                <button class="detail-btn" onclick="window.open('https://www.linkedin.com/posts/jirashcha_buopenhouse2024-activity-7236309115075969026-1qGd?utm_source=share&utm_medium=member_desktop', '_blank');">More Details</button>
+              </div>
+            </div>
+          
+            <div class="card" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
+              <div class="image">
+                <img src="img\activity\ac3.png" alt="" />
+              </div>
+              <div class="detail">
+                <h3>GitHub for Beginners</h3>
+                <p>This is a recommendation for students from the Faculty of Information Technology and Innovation, Bangkok...</p>
+                <button class="detail-btn" onclick="window.open('https://www.linkedin.com/posts/jirashcha_github-for-beginners-what-is-github-a-crucial-activity-7211654069977763840-2Jt8?utm_source=share&utm_medium=member_desktop', '_blank');">More Details</button>
+              </div>
+            </div>
+          </div>
 
+          <div class="boxes">
+            <div class="card"data-aos="fade-left" data-aos-duration="1500" data-aos-delay="100">
+              <div class="image">
+                <img src="img\activity\ac4.png" alt="" />
+              </div>
+              <div class="detail">
+                <h3>Data Engineering Bootcamp #3</h3>
+                <p>In March, I had the opportunity to attend Batch 3 of the Data Engineering Bootcamp by Skooldio with a 50% scholarship...</p>
+                <button class="detail-btn" onclick="window.open('https://www.linkedin.com/posts/jirashcha_in-march-i-had-the-opportunity-to-attend-activity-7181290093498830848-wco4?utm_source=share&utm_medium=member_desktop', '_blank');">More Details</button>
+              </div>
+            </div>
+
+          
+            <div class="card" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">
+              <div class="image">
+                <img src="img\activity\ac5.png" alt="" />
+              </div>
+              <div class="detail">
+                <h3>Mini Racing Cars Competition</h3>
+                <p>the AI Mini Racing Cars event. This event aimed to create a new experience in the world of miniature racing cars...</p>
+                <button class="detail-btn" onclick="window.open('https://www.linkedin.com/posts/center-of-specialty-innovation_on-march-13-2024-center-of-specialty-innovation-ugcPost-7174610029759664128-_sJD?utm_source=share&utm_medium=member_desktop', '_blank');">More Details</button>
+              </div>
+            </div>
+
+            <div class="card"data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
+              <div class="image">
+                <img src="img\activity\ac6.png" alt="" />
+              </div>
+              <div class="detail">
+                <h3>Interprogram KAIT x BU 2024</h3>
+                <p>BUxKAIT 2024 project has concluded, and it was an incredibly enjoyable month. We traveled together...</p>
+                <button class="detail-btn" onclick="window.open('https://www.linkedin.com/posts/jirashcha_buxkait-2024-project-has-concluded-activity-7174254563259035648-PJNt?utm_source=share&utm_medium=member_desktop', '_blank');">More Details</button>
+              </div>
+            </div>
+          </div>
+          
+          <div class="boxes">
+            <div class="card"data-aos="fade-left" data-aos-duration="1500" data-aos-delay="100">
+              <div class="image">
+                <img src="img\activity\ac7.png" alt="" />
+              </div>
+              <div class="detail">
+                <h3>Python Developer Pathway Be Inspired by Microsoft Learn Student Ambassador</h3>
+                <p>On Saturday, November 11th, my friend and I, Microsoft Learn Student Ambassador...</p>
+                <button class="detail-btn" onclick="window.open('https://www.linkedin.com/posts/jirashcha_buopenhouse2023-python-mlsa-activity-7129870109145251840-N6EX?utm_source=share&utm_medium=member_desktop', '_blank');">More Details</button>
+              </div>
+            </div>
+
+            <div class="card" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">
+              <div class="image">
+                <img src="img\activity\ac8.png" alt="" />
+              </div>
+              <div class="detail">
+                <h3>Techsauce global summit 2022</h3>
+                <p>ExciteI volunteered at Techsauce global summit 2022 - on August 26th and 27th. It was too fun and...</p>
+                <button class="detail-btn" onclick="window.open('https://www.linkedin.com/posts/jirashcha_techsauce-tsgs2020-activity-6972433781857144832-66hf?utm_source=share&utm_medium=member_desktop', '_blank');">More Details</button>
+              </div>
+            </div>
+
+            <div class="card" data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
+              <div class="image">
+                <img src="img\activity\ac9.png" alt="" />
+              </div>
+              <div class="detail">
+                <h3>BU Diamond Day 2022</h3>
+                <p> I got a chance to be a part of organizing BU Diamond Day 2022, a new student orientation event...</p>
+                <button class="detail-btn" onclick="window.open('https://www.linkedin.com/posts/jirashcha_on-june-7th-i-got-a-chance-to-be-a-part-activity-6967045578430062592-uZib?utm_source=share&utm_medium=member_desktop', '_blank');">More Details</button>
+              </div>
+            </div>
+          </div>  
+        </div>
+    
+        <div class="tab-content" id="projects-tab">
+          <div class="boxes">
+            <div class="card"data-aos="fade-left" data-aos-duration="1500" data-aos-delay="100">
+              <div class="image">
+                <img src="img\activity\ac7.png" alt="" />
+              </div>
+              <div class="detail">
+                <h3>Python Developer Pathway Be Inspired by Microsoft Learn Student Ambassador</h3>
+                <p>On Saturday, November 11th, my friend and I, Microsoft Learn Student Ambassador...</p>
+                <button class="detail-btn" onclick="window.open(' ', '_blank');">More Details</button>
+                <button class="detail-btn" onclick="window.open(' ', '_blank');">Demo</button>
+              </div>
+            </div>
+          </div>
+        </div>
+    
+        <div class="tab-content" id="certificates-tab">
+          <div class="boxes">
+            <div class="card"data-aos="fade-left" data-aos-duration="1500" data-aos-delay="100">
+              <div class="image">
+                <img src="img\cer\cer1.png" alt="" />
+              </div>
+              <div class="detail">
+                <h3>Data Engineering Bootcamp #3</h3>
+                <p>Skooldio</p>
+                <button class="detail-btn" onclick="window.open('https://www.skooldio.com/certificate/9113d7d0-db67-4e8e-b6c3-5c8d74352383', '_blank');">More Details</button>
+              </div>
+            </div>
+
+            <div class="card"data-aos="fade-left" data-aos-duration="1500" data-aos-delay="200">
+              <div class="image">
+                <img src="img\cer\cer2.png" alt="" />
+              </div>
+              <div class="detail">
+                <h3>Mastering Looker Studio</h3>
+                <p>Skooldio</p>
+                <button class="detail-btn" onclick="window.open('https://www.skooldio.com/certificate/e6cdf9b6-de2c-48d2-8936-f4fe3dc0c835', '_blank');">More Details</button>
+              </div>
+            </div>
+
+            <div class="card"data-aos="fade-left" data-aos-duration="1500" data-aos-delay="300">
+              <div class="image">
+                <img src="img\cer\cer3.png" alt="" />
+              </div>
+              <div class="detail">
+                <h3>Microsoft Learn Student Ambassadors</h3>
+                <p>Microsoft</p>
+                <button class="detail-btn" onclick="window.open('https://mvp.microsoft.com/studentambassadors/certificate/650a8d3c-a3f8-497e-9339-6416db03b94b', '_blank');">More Details</button>
+              </div>
+            </div>
+          </div>
+
+          <div class="boxes">
+            <div class="card"data-aos="fade-left" data-aos-duration="1500" data-aos-delay="100">
+              <div class="image">
+                <img src="img\cer\cer4.png" alt="" />
+              </div>
+              <div class="detail">
+                <h3>Fundamentals of Deep Learning</h3>
+                <p>NVIDIA</p>
+                <button class="detail-btn" onclick="window.open('https://learn.nvidia.com/certificates?id=73219d71011c47f9911c069cfaeee27e', '_blank');">More Details</button>
+              </div>
+            </div>
+
+            <div class="card"data-aos="fade-left" data-aos-duration="1500" data-aos-delay="100">
+              <div class="image">
+                <img src="img\cer\cer5.png" alt="" />
+              </div>
+              <div class="detail">
+                <h3>Techsauce Global Summit 2022</h3>
+                <p>Techsauce</p>
+                <button class="detail-btn" onclick="window.open('https://drive.google.com/file/d/1nfUzS539jBYNKc-MMh-uJprcmqpTcUle/view', '_blank');">More Details</button>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </section>
-    <!-- Contact -->
-    <section class="context" id="contact">
+    <!-- Popup for details -->
+    <!-- <div class="popup" id="popup">
+      <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <h2>Detail Title</h2>
+        <p>Here are more details about the selected item...</p>
+      </div>
+    </div>    -->
+
+    <!-- contact-->
+    <section class="contact" id="contact">
       <div class="content">
         <div class="title" data-aos="fade-up" data-aos-duration="1500" data-aos-delay="100"><span>Contact Me</span></div>
-        <div class="text">
-          <div class="topic">123</div>
-          <p>456</p>
-          <div class="button">
-            <button>789</button>
+        <div class="boxes">
+          <div class="box">
+          <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="1.5rem" viewBox="0 0 24 24"><path fill="currentColor" d="M12 11.5A2.5 2.5 0 0 1 9.5 9A2.5 2.5 0 0 1 12 6.5A2.5 2.5 0 0 1 14.5 9a2.5 2.5 0 0 1-2.5 2.5M12 2a7 7 0 0 0-7 7c0 5.25 7 13 7 13s7-7.75 7-13a7 7 0 0 0-7-7"/></svg>
+            <p> Bangkok, Thailand</p>
           </div>
+          <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="1.5rem" viewBox="0 0 24 24"><path fill="currentColor" d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2m0 4l-8 5l-8-5V6l8 5l8-5z"/></svg>
+            <p> jirashcha.wang@gmail.com</p>
+          </div>
+          <div class="icon"><svg xmlns="http://www.w3.org/2000/svg" width="2rem" height="1.5rem" viewBox="0 0 24 24"><path fill="currentColor" d="M19.95 21q-3.125 0-6.175-1.362t-5.55-3.863t-3.862-5.55T3 4.05q0-.45.3-.75t.75-.3H8.1q.35 0 .625.238t.325.562l.65 3.5q.05.4-.025.675T9.4 8.45L6.975 10.9q.5.925 1.187 1.787t1.513 1.663q.775.775 1.625 1.438T13.1 17l2.35-2.35q.225-.225.588-.337t.712-.063l3.45.7q.35.1.575.363T21 15.9v4.05q0 .45-.3.75t-.75.3"/></svg>
+            <p> 065-095-1995</p>
+          </div>
+        </div>
+        <div class="social-links">
+          <a href="https://github.com/Jirashcha" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-duration="1500"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/jirashcha/" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-duration="1500"><i class="fa-brands fa-linkedin"></i></a>
+          <a href="https://www.facebook.com/jirashcha.strange" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-duration="1500"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.youtube.com/@data-en" target="_blank" rel="noopener noreferrer" data-aos="fade-up" data-aos-duration="1500" ><i class="fa-brands fa-youtube"></i></a>
         </div>
       </div>
     </section>
+
     <!-- footer -->
+    <section></section>
     <footer>
       <div class="text">
         <span
           >Created By <a href="#">Jirashcha</a> | &#169; 2024 All Rights
-          Reserved</span
-        >
+          Reserved</span>
       </div>
     </footer>
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
