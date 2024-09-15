@@ -516,6 +516,13 @@ section.works {
   .detail-btn:active{
     scale: 1;
   }
+  .works .pro {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    
+  }
+
   
   /* Popup Styles */
   /* .popup {
