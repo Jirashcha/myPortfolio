@@ -63,3 +63,13 @@ tabButtons.forEach(button => {
 //     popup.style.display = 'none';
 //   }
 // });
+
+// JavaScript for the hamburger menu
+document.addEventListener('DOMContentLoaded', () => {
+  const hamburg = document.querySelector('.hamburg');
+  const navContainer = document.querySelector('.nav-container');
+
+  hamburg.addEventListener('click', () => {
+      navContainer.classList.toggle('active');
+  });
+});

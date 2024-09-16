@@ -612,3 +612,177 @@ footer .text span a:hover{
     font-weight: 600;
     text-decoration: underline;
 }
+
+.scroll-button a{
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    color: #929AAB;
+    background: #c7c4c4;
+    padding: 7px 12px;
+    font-size: 18px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.15);
+    display: none;
+}
+
+
+@media (max-width: 1000px) {
+    .about .about-details{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .about .about-details .left{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .about-details .right{
+        width:90%;
+        margin: 40px 0;
+    }
+}
+
+@media (max-width: 968px) {
+    section .main-container {
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+    .nav-container .links {
+        display: none;
+    }
+
+    .hamburg,
+    .cancel {
+        opacity: 1;
+        pointer-events: visible;
+    }
+
+    .main-container .contact{
+        margin:  2.5rem;
+        height: 2.5rem;
+        font-size: 1.5rem;
+    }
+    .main-container .image{
+        z-index: -1;
+        height: 60%;
+    }
+    .skills .boxes .box {
+        margin: 20px 0;
+        width: 100%;
+    }
+}
+
+/* กำหนด CSS ทั่วไปที่เหมาะกับโทรศัพท์มือถือ */
+@media (max-width: 768px) {
+    /* Navbar */
+    .nav-container {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px;
+        position: relative;
+    }
+    
+    .hamburg {
+        display: block;
+        cursor: pointer;
+        font-size: 24px;
+        z-index: 101;
+    }
+
+    .nav-container .links {
+        display: none; /* ซ่อนลิงก์เมนูเริ่มต้น */
+        flex-direction: column;
+        width: 100%;
+        background-color: #f5f5f56b;
+        position: absolute;
+        top: 100%; /* ปรับระยะห่างจากด้านบนตามต้องการ */
+        left: 0;
+        z-index: 100;
+    }
+
+    .nav-container.active .links {
+        display: flex; /* แสดงเมนูเมื่อมีการเปิดใช้งาน */
+    }
+
+    .nav-container .links a {
+        padding: 15px;
+        text-align: center;
+        font-size: 1rem;
+        color: #333;
+        text-decoration: none;
+    }
+
+    .nav-container .links a:hover {
+        background-color: #ddd;
+    }
+
+    /* Main container */
+    .main-container {
+        padding: 20px;
+        margin: 0;
+        flex-direction: column;
+    }
+
+    .main-container .image {
+        width: 100%;
+        height: auto;
+        margin: 0 auto;
+    }
+
+    .main-container .content {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* About Section */
+    .about .about-details {
+        flex-direction: column;
+    }
+
+    .about .about-details .left,
+    .about .about-details .right {
+        width: 100%;
+    }
+
+    .about .right img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Skills Section */
+    .skills .boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .skills .box {
+        width: 90%;
+        margin: 10px 0;
+        padding: 20px;
+    }
+
+    /* Works Section */
+    .works .boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .works .boxes .card {
+        width: 90%;
+        margin: 10px 0;
+    }
+
+    /* Contact Section */
+    .contact .boxes {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .contact .boxes .box {
+        width: 90%;
+        margin: 10px 0;
+        padding: 20px;
+    }
+}
