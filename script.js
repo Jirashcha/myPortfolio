@@ -28,6 +28,7 @@ document.addEventListener('DOMContentLoaded', type);
 // Tabs functionality
 const tabButtons = document.querySelectorAll('.tab-button');
 const tabContents = document.querySelectorAll('.tab-content');
+const contactSection = document.querySelector('#contact');
 
 tabButtons.forEach(button => {
   button.addEventListener('click', () => {
@@ -38,9 +39,30 @@ tabButtons.forEach(button => {
     // Add 'active' class to the clicked button and the corresponding tab
     button.classList.add('active');
     const tab = button.getAttribute('data-tab');
-    document.getElementById(`${tab}-tab`).classList.add('active');
+    const tabContent = document.getElementById(`${tab}-tab`);
+
+    // Show the corresponding tab content
+    if (tabContent) {
+      tabContent.classList.add('active');
+    }
+
+    // Ensure the contact section stays visible
+    if (contactSection) {
+      contactSection.style.display = 'flex'; // Show contact section
+    }
   });
 });
+
+// Ensure the contact section stays visible on initial load
+window.addEventListener('DOMContentLoaded', () => {
+  if (contactSection) {
+    contactSection.style.display = 'flex'; // Ensure contact section is visible
+  }
+});
+
+
+
+
 
 // Popup functionality
 // const popup = document.getElementById('popup');

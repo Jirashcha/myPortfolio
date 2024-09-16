@@ -62,10 +62,10 @@ body{
     position: absolute;
     right: 15px;
     top: 10px;
-    color: #121212;
+    color: #c7c3c3ef;
     opacity: 0;
     pointer-events: none;
-    font-size: clamp(2.5rem, 0.5rem + 5vw, 3rem);
+    margin-top: 3px;
 }
 .nav-container .links{
     display: flex;
@@ -144,6 +144,8 @@ section .main-container{
     padding-left: 35px;
     align-items: center;
     margin: 40px;
+    margin-top: 150px;
+    margin-bottom: 100px;
 }
 .main-container .image{
     width: 513px;
@@ -585,7 +587,19 @@ section .contact {
     margin-top: 50px;
     margin-right: 40px;
   }
-
+  .contact p{
+    font-size: 1.3rem;
+  }
+  #contact {
+    display: flex; /* Ensure it's displayed */
+  }
+  .tab-content {
+    display: none; /* ซ่อนเนื้อหาทั้งหมดของแท็บ */
+  }
+  
+  .tab-content.active {
+    display: block; /* แสดงเฉพาะเนื้อหาของแท็บที่ active */
+  }
 
 /*footer section */
 footer{
@@ -649,28 +663,11 @@ footer .text span a:hover{
         display: flex;
         flex-direction: column;
     }
-    .nav-container .links {
-        display: none;
-    }
-
-    .hamburg,
-    .cancel {
-        opacity: 1;
-        pointer-events: visible;
-    }
 
     .main-container .contact{
         margin:  2.5rem;
         height: 2.5rem;
         font-size: 1.5rem;
-    }
-    .main-container .image{
-        z-index: -1;
-        height: 60%;
-    }
-    .skills .boxes .box {
-        margin: 20px 0;
-        width: 100%;
     }
 }
 
@@ -678,78 +675,126 @@ footer .text span a:hover{
 @media (max-width: 768px) {
     /* Navbar */
     .nav-container {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-        position: relative;
+        height: 40px;
     }
-    
     .hamburg {
-        display: block;
-        cursor: pointer;
-        font-size: 24px;
-        z-index: 101;
+        opacity: 1;
+        pointer-events: visible;
+        font-size: 1.3rem;
     }
-
     .nav-container .links {
         display: none; /* ซ่อนลิงก์เมนูเริ่มต้น */
         flex-direction: column;
         width: 100%;
-        background-color: #f5f5f56b;
         position: absolute;
         top: 100%; /* ปรับระยะห่างจากด้านบนตามต้องการ */
         left: 0;
         z-index: 100;
+        justify-content: center;
+        background-color: #f5f5f56b;
     }
-
     .nav-container.active .links {
         display: flex; /* แสดงเมนูเมื่อมีการเปิดใช้งาน */
     }
-
     .nav-container .links a {
-        padding: 15px;
+        padding: 5px;
         text-align: center;
         font-size: 1rem;
-        color: #333;
+        color: #494949;
         text-decoration: none;
+        display: flex; /* ใช้ flexbox */
+        align-items: center; /* แนวตั้ง */
+        justify-content: center;
+        backdrop-filter: blur(10px); 
     }
-
+    .nav-container .links a::before{
+        display: none;
+    }
     .nav-container .links a:hover {
-        background-color: #ddd;
+        scale: 1.2;
+        color: #646b86;
+    }
+    .nav-container .links a:active {
+        scale: 1.0;
     }
 
     /* Main container */
     .main-container {
-        padding: 20px;
-        margin: 0;
+        padding: 10px;
+        display: flex;
         flex-direction: column;
+        align-items: center;
+        margin-top: 40px !important;
+        margin-bottom: 40px !important;
+        justify-content: space-around; 
     }
-
     .main-container .image {
-        width: 100%;
+        max-width: 100%; /* Ensure image does not overflow container */
         height: auto;
-        margin: 0 auto;
     }
-
     .main-container .content {
         width: 100%;
-        text-align: center;
+        height: 470px;
+        text-align: left;
+        font-size: 14px; /* Adjust font size for readability */
+        line-height: 1.5;
+        justify-content: center;
+        align-items: center;
+        overflow: auto;
+    }
+    .main-container h1 {
+        font-size: 1.5rem; /* Adjust font size for readability */
+        margin-top: 20px;
+    }
+    .main-container .typewriter {
+        font-size: 1.5rem; /* Adjust font size for readability */
+        margin-bottom: 20px;
+        line-height: 1.5;
+    }
+    .main-container p {
+        margin-bottom: 20px; /* ป้องกันการขยับจาก margin */
+        line-height: normal; 
+    }
+    .main-container .image img{
+        width: 100%;
     }
 
     /* About Section */
-    .about .about-details {
-        flex-direction: column;
+    .about {
+        margin: 20px;
+        margin-left: 0 !important;
     }
 
-    .about .about-details .left,
-    .about .about-details .right {
-        width: 100%;
+    .about .about-details {
+        flex-direction: column; /* เปลี่ยน flex-direction เป็น column บนมือถือ */
+        margin: 0 !important; /* ลด margin สำหรับมือถือ */
+    }
+
+    .about-details .right {
+        width: 100%; /* ให้รูปภาพเต็มความกว้างของพื้นที่ */
+        padding-left: 0; /* เอา padding-left ออก */
+        margin-bottom: 30px; /* เพิ่มช่องว่างด้านล่างของรูปภาพ */
     }
 
     .about .right img {
-        width: 100%;
-        height: auto;
+        width: 100%; /* ปรับขนาดรูปภาพให้เต็มความกว้าง */
+        height: auto; /* ปรับความสูงของรูปภาพตามอัตราส่วน */
+        border-radius: 10px; /* ลดขนาด border-radius สำหรับมือถือ */
+        margin-top: 0 !important;
     }
+
+    .about-details .left {
+        width: 100%; /* ให้เนื้อหาใน left เต็มความกว้างของพื้นที่ */
+        margin-right: 0 !important;
+        margin-left: 0 !important; /* เอา margin-left ออก */
+        text-align: left;
+        margin: 0 !important;
+    }
+
+    .about .details {
+        margin-left: 0 !important; /* เอา margin-left ออก */
+    }
+    
 
     /* Skills Section */
     .skills .boxes {
@@ -764,25 +809,63 @@ footer .text span a:hover{
     }
 
     /* Works Section */
+    .works {
+        margin: 0 !important;
+    }
+    .works .tabs {
+        flex-direction: row;
+        justify-content: center;
+    }
     .works .boxes {
         flex-direction: column;
         align-items: center;
     }
 
     .works .boxes .card {
-        width: 90%;
-        margin: 10px 0;
+        width: 100%;
     }
 
     /* Contact Section */
+    section .contact {
+        padding: 10px; /* ลด padding สำหรับมือถือ */
+        flex-direction: column; /* จัดเรียงองค์ประกอบในแนวตั้ง */
+        align-items: center; /* จัดให้ตรงกลางแนวตั้ง */
+    }
+    .contact .content {
+        width: 100%; /* ให้เนื้อหาเต็มความกว้างของพื้นที่ */
+        padding: 6px; /* เพิ่ม padding ภายในกล่องเนื้อหา */
+        text-align: center; /* จัดข้อความให้อยู่กลาง */
+    }
+
     .contact .boxes {
-        flex-direction: column;
+        display: flex;
+        flex-direction: column; /* จัดเรียงกล่องในแนวตั้ง */
+        align-items: center; /* จัดกล่องให้ตรงกลาง */
+        margin-left: 0; /* เอา margin-left ออก */
+    }
+
+    .contact .icon {
+        display: flex;
+        margin-bottom: 20px; /* เพิ่มช่องว่างระหว่างกล่อง */
+        width: 100%; /* ให้กล่องข้อความเต็มความกว้าง */
         align-items: center;
     }
 
-    .contact .boxes .box {
-        width: 90%;
-        margin: 10px 0;
-        padding: 20px;
+    .contact .icon p {
+        margin-left: 5px; /* เพิ่มช่องว่างระหว่างไอคอนกับข้อความ */
+        font-size: 14px; /* ลดขนาดฟอนต์สำหรับมือถือ */
+    }
+
+    .contact .social-links {
+        margin-top: 30px; /* ลด margin-top สำหรับมือถือ */
+        margin-right: 0; /* เอา margin-right ออก */
+        display: flex;
+        flex-wrap: wrap; /* จัดให้ไอคอนสังคมอยู่ในบรรทัดเดียวหรือหลายบรรทัดตามความกว้าง */
+        justify-content: center; /* จัดให้อยู่ตรงกลางแนวนอน */
+    }
+
+    .contact .social-links a {
+        margin: 5px; /* เพิ่มช่องว่างระหว่างไอคอน */
+        font-size: 1rem; /* ปรับขนาดฟอนต์สำหรับไอคอน */
     }
 }
